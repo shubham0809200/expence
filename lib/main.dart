@@ -1,5 +1,3 @@
-import 'package:flutter/gestures.dart';
-
 import './widgets/transaction_list.dart';
 import './models/transaction.dart';
 import './widgets/new_transaction.dart';
@@ -15,9 +13,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Presonal Expenses',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
-        accentColor: Colors.redAccent,
-      ),
+          primarySwatch: Colors.pink,
+          accentColor: Colors.redAccent,
+          fontFamily: 'QuickSand',
+          textTheme: ThemeData.light().textTheme.copyWith(
+                title: TextStyle(
+                  fontFamily: 'OpenSans',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+          appBarTheme: AppBarTheme(
+            textTheme: ThemeData.light().textTheme.copyWith(
+                  title: TextStyle(
+                    fontFamily: 'OpenSans',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+          )),
       home: MyHomePage(),
     );
   }
@@ -30,14 +44,14 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> _userTransaction = [
-    Transaction(
-        id: 't1', title: 'New Shoes', amount: 58.81, date: DateTime.now()),
-    Transaction(
-      id: 't2',
-      title: 'Weekly groslaries',
-      amount: 45.22,
-      date: DateTime.now(),
-    )
+    // Transaction(
+    //     id: 't1', title: 'New Shoes', amount: 58.81, date: DateTime.now()),
+    // Transaction(
+    //   id: 't2',
+    //   title: 'Weekly groslaries',
+    //   amount: 45.22,
+    //   date: DateTime.now(),
+    // )
   ];
 
   void _addNewTransaction(String xtTitle, double txAmount) {
