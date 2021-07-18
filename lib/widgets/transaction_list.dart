@@ -18,7 +18,16 @@ class TransactionList extends StatelessWidget {
                   'No Transactions addes yet !',
                   style: Theme.of(context).textTheme.title,
                 ),
-                Image.asset('assets/images/waiting.png'),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  height: 400,
+                  child: Image.asset(
+                    'assets/images/waiting.png',
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ],
             )
           : ListView.builder(
