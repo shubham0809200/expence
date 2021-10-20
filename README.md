@@ -1,16 +1,10 @@
-# expense_app
+# Expence App 
 
-A new Flutter project.
+<img src="assets/images/expence.jpg" alt="epence app" />
 
-## Getting Started
+## Over View
 
-This project is a starting point for a Flutter application.
+This project is for to keep a week.ly track of expenditure.
 
-A few resources to get you started if this is your first Flutter project:
+made with Flutter 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
